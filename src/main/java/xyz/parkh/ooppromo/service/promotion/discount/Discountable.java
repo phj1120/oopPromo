@@ -1,4 +1,4 @@
-package xyz.parkh.ooppromo.discount;
+package xyz.parkh.ooppromo.service.promotion.discount;
 
 public interface Discountable {
     void calculate();

@@ -1,4 +1,4 @@
-package xyz.parkh.ooppromo.issue;
+package xyz.parkh.ooppromo.service.promotion.issue;
 
 public interface Issuable {
     default void issue(){
