@@ -1,6 +1,9 @@
 package xyz.parkh.ooppromo.entity;
 
+import lombok.Getter;
+
+@Getter
 public class MemberBase {
-    String memberNo;
-    String memberNm;
+    private long memberNo;
+    private String memberNm;
 }

@@ -1,16 +1,18 @@
 package xyz.parkh.ooppromo.entity;
 
-import java.time.LocalDateTime;
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class BenefitBase {
-    String benefitNo;
-    String benefitNm;
-    String benefitTypeCd; // 혜택타입
-    String fixRateCd; // 할인방식: 정액/정률
-    long fixRateAmt;
-    long limitDiscountAmt; // 최대 할인 금액
-    int discountDays; // 발급일자 기준만 고려.
-    List<GoodsBase> applyGoodsList = new ArrayList<>(); // 적용대상상품
+    private long benefitNo;
+    private String benefitNm;
+    private String benefitTypeCd; // 혜택타입
+    private String fixRateCd; // 할인방식: 정액/정률
+    private long fixRateAmt;
+    private long limitDiscountAmt; // 최대 할인 금액
+    private int discountDays; // 발급일자 기준만 고려.
+    private List<GoodsBase> applyGoodsList = new ArrayList<>(); // 적용대상상품
 }
